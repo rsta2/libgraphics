@@ -1,0 +1,4 @@
+README
+
+OpenGL 1.1 demo which shows a rotating Raspberry Pi 3 Model B+ board. The demo
+runs for 60 seconds and reboots then. Hidden surfaces are currently shown.

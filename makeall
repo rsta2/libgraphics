@@ -1,0 +1,32 @@
+#!/bin/bash
+
+cd circle
+
+./makeall --nosample $1 $2 || exit
+
+cd addon
+
+cd linux
+make $1 $2 || exit
+cd ..
+
+cd vc4
+
+cd vchiq
+make $1 $2 || exit
+cd ..
+
+cd interface
+./makeall $1 $2 || exit
+
+cd ..
+
+cd ..
+
+cd ..
+
+cd ..
+
+cd lib
+make $1 $2 || exit
+cd ..

@@ -1,0 +1,32 @@
+README
+
+This directory contains some fonts, which can be used with OpenVG.
+
+If you want to use your own fonts, do the following:
+
+1. Copy the .ttf file of the font(s) temporarily into this directory.
+
+2. If the base file name of a font file contains characters, which are not
+allowed in C-identifiers, you have to rename the file and replace this
+character, because the name is used to create such identifiers.
+
+3. Enter "make" to make the font converter tool. You need the Freetype2 library
+on your host machine, so that this can be done.
+
+4. Given that the name of the font file is SomeFont.ttf, enter the following
+command to create the font header file to be included into your application:
+
+	make SomeFont.h
+
+5. Now the font can be included in your application and a font object can be
+created from it:
+
+	#include <graphics/vgfont.h>
+	#include <fonts/vg/SomeFont.h>
+
+	SomeFunction()
+	{
+		CVgFont SomeFont20 (MAKE_FONT (SomeFont, 20.0f));
+
+		...
+	}
