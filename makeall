@@ -27,6 +27,15 @@ cd ..
 
 cd ..
 
+cd include/fonts
+
+cd vg
+make $1 $2 || exit
+cd ..
+
+cd ../..
+
+
 cd lib
 make $1 $2 || exit
 cd ..

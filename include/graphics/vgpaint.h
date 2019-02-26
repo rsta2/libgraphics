@@ -28,7 +28,7 @@ public:
 	CVgPaint (void);
 	~CVgPaint (void);
 
-	VGPaint GetHandle (void)	{ return m_Paint; }
+	operator VGPaint (void)		{ return m_Paint; }
 
 	void SetColor (const VGfloat Color[4],
 		       VGbitfield PaintMode = VG_FILL_PATH | VG_STROKE_PATH);

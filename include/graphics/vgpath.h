@@ -29,7 +29,7 @@ public:
 	CVgPath (void);
 	~CVgPath (void);
 
-	VGPath GetHandle (void)		{ return m_Path; }
+	operator VGPath (void)		{ return m_Path; }
 
 	void AppendLine (VGfloat X0, VGfloat Y0, VGfloat X1, VGfloat Y1);
 
