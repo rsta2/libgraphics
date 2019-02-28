@@ -4,6 +4,7 @@
 *.lst
 *.img
 *.map
+*.hex
 *.bin
 *.com
 *~
