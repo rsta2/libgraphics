@@ -52,10 +52,8 @@ boolean CObjectViewer3D::Initialize (void)
 {
 	assert (!m_bInitialized);
 
-	glEnable (GL_CULL_FACE);
-
 	glEnable (GL_DEPTH_TEST);
-	glDepthFunc (GL_LESS);
+	glDepthFunc (GL_LEQUAL);
 
 	glHint (GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
 
