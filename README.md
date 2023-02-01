@@ -44,7 +44,7 @@ If the build was successful, you find the library file of libgraphics in the *li
 Samples
 -------
 
-If you wnat to try one of the provided sample programs, now go its subdirectory in *sample/* and do:
+If you want to try one of the provided sample programs, now go its subdirectory in *sample/* and do:
 
 	make clean
 	make
